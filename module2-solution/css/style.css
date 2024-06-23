@@ -1,0 +1,117 @@
+/* 
+      -Breakpoints-
+Desktop: 992px and above.
+Tablet: 768px to 991px.
+Mobile: 767px and below. */
+
+/*
+      -Layout-
+Desktop: Three sections in one row, each taking equal space.
+Tablet: Two sections in the first row (equal size), one section in the second row (full width).
+Mobile: Each section takes up the entire row.*/
+
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Lucida Console;
+  color: #F2EDE3;
+  background-color: #8FB8DE;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+.item {
+  border: 1px solid black;
+  width: 90%;
+  height: 150px;
+  margin: 10px auto;
+  color: #77644E;
+  position: relative;
+  padding-top: 20px;
+  overflow: hidden;
+}
+
+#left .item{
+  background-color: #E9D9FD;
+}
+
+#middle .item{
+  background-color: #FFD6E9;
+}
+
+#right .item{
+  background-color: #FCF6BD;
+}
+
+/* Simple Responsive Framework */
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.col {
+  padding: 10px;
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+  .col-lg-4 {
+    width: 33.33%;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-6:nth-child(3) {
+    width: 100%; 
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .col-sm-12 {
+    width: 100%;
+  }
+}
+
+/* Section title styles */
+.section-title {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px 50px;
+  color: #77644E;
+  font-weight: bold;
+  border: 1px solid black;
+}
+
+#chicken {
+    background-color: #E9C6EC;
+}
+
+#beef {
+    background-color: #FFB4A2;
+}
+
+#sushi {
+    background-color: #FFD599;
+}
+
+
+
+.text {
+  position: absolute;
+  padding: 20px 20px;
+}
