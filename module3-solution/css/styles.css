@@ -1,0 +1,90 @@
+.navbar {
+  background-color: #80acd1;
+  color: black;
+}
+
+.navbar-brand, .heading{
+  font-family: "Playwrite DE LA", cursive;
+}
+
+.heading {
+  font-size: 50px;
+}
+
+#tall-section {
+  background-color: #80acd1;
+  font-size: 20px;
+  height: 1000px;
+  text-align: center;
+}
+
+  #item1, #item2, #item3{
+    border: solid 5px #80acd1;
+  }
+
+  #item1 {
+    background-color: #D1C980; /* yellow */
+  }
+
+  #item2 {
+    background-color: #D1A580; /* orange */
+  }
+
+  #item3 {
+    background-color: #D18081; /* red */
+  }
+
+@media (min-width: 992px) {
+  #item1, #item2, #item3{
+    border: solid 5px #80acd1;
+  }
+
+  #item1 {
+   
+    border-right: solid 0px #80acd1;
+  }
+
+  #item2 {
+    
+    border-right: solid 0px #80acd1;
+  }
+
+  #item3 {
+    
+    /*border: dotted 5px #80acd1;*/
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .col-sm-6:nth-child(3) {
+      width: 100%; 
+  }
+
+  #item1, #item2, #item3 {
+    border: solid 5px #80acd1;
+  }
+
+  #item2 {
+    border-left: solid 0px #80acd1;
+  }
+
+  #item3 {
+    border-top: solid 0px #80acd1;
+  }
+
+}
+
+@media (max-width: 767px)
+{
+  #item1, #item2, #item3 {
+    border: solid 5px #80acd1;
+  }
+
+  #item2{
+    border-top:solid 0px #80acd1;
+    border-bottom:solid 0px #80acd1;
+  }
+}
+
+
